@@ -1,0 +1,943 @@
+/*
+    =======================
+        public styles
+    =======================
+*/
+
+* , *:after , *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans';
+    height: 1500px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.clear {
+    clear: both;
+}
+
+/*
+    =======================
+        Navbar styles
+    =======================
+*/
+
+.navbar {
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 2px solid #222;
+} 
+
+.navbar .logo {
+    width: 40%;
+    float: left;
+}
+
+
+.navbar .logo .logo_text {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar input , .navbar label {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.navbar label {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../images/Navbar/open.png) no-repeat;
+    background-size: cover;
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+.navbar input:checked ~ .ul_list {
+    display: block;
+}
+
+
+.navbar input:checked ~ label {
+    background: url(../images/Navbar/close.png) no-repeat;
+    background-size: cover;
+}
+
+.navbar input {
+    display: none;
+}
+
+.navbar .ul_list {
+    width: 60%;
+    float: left;
+    list-style: none;
+    text-align: end;
+}
+
+
+
+.navbar .ul_list .list_item {
+    display: inline-block;
+}
+
+.navbar .ul_list .list_item a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    transition: all 0.4s ease;
+}
+
+.navbar .ul_list .list_item a:hover{
+    color: #eb5424;
+}
+
+
+/*
+    =======================
+        Navbar styles
+    =======================
+*/
+
+.home {
+    height: 500px;
+    background-image: url(../images/Home/home-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+}
+
+.home .home_information {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 65%;
+}
+
+.home .home_information .home_title {
+    font-size: 60px;
+    font-weight: bold;
+    color: #5e5e5e;
+    margin-bottom: 20px;
+}
+
+.home .home_information .home_info {
+    font-size: 35px;
+    color: #eb5424;
+    margin-bottom: 20px;
+}
+
+.home .home_information .home-desc {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.home .home_information .home-desc span {
+    color: #000;
+    font-weight: bold;
+}
+
+.home .home_information .home_btn {
+    background: #eb5424;
+    color: #fff;
+    font-size: 18px;
+    width: 150px;
+    border: 0;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.home .home_information .home_btn:hover {
+    background: #fff;
+    color: #eb5424;
+}
+
+/*
+    =======================
+        Section 2 work styles
+    =======================
+*/
+
+.section2_work {
+    background: #fff;
+    height: auto;
+    padding: 20px 0;
+}
+
+.section2_title1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section2_title1 span {
+    font-weight: normal;
+    color: #888;
+}
+
+.parts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.part1 {
+    width: 30%;
+}
+
+.section2_title1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.section2_title1 span {
+    font-weight: normal;
+}
+
+.part1 {
+    margin-top: 30px;
+    height: auto;
+    padding: 80px 0;
+    border: 1px solid #888;
+    text-align: center;
+}
+
+.part1 .icon1 {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.part1 .section2_title2 {
+    font-size: 22px;
+    color: #eb5424;
+    margin-bottom: 20px;
+}
+
+.part1 .line {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+    opacity: 0.3;
+}
+
+.part1 .section2_desc {
+    font-size: 15px;
+    color: #888;
+    padding:  20px 30px;
+    line-height: 30px;
+}
+
+/*
+    =============================
+        Section 3 Portfolio styles
+    =============================
+*/
+
+.section3_portfolio {
+    background-color: #f8f8f8;
+    padding: 20px 0 0 0;
+}
+
+.portfolio_title {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.portfolio_title span {
+    font-weight: normal;
+    color: #888;
+}
+
+.portfolio_list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.portfolio_list li {
+    margin: 0 5px;
+}
+
+.portfolio_list li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #888;
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio_list li a:hover {
+    background-color: #eb5424;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.portfolio_list .active a {
+    background-color: #eb5424;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.section3_portfolio .box_images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section3_portfolio .box_images .image1 {
+    width: 25%;
+    font-size: 0;
+}
+
+.section3_portfolio .box_images .image1 img {
+    width: 100%;
+}
+
+.section3_portfolio .box_images .image1 {
+    position: relative;
+}
+
+.section3_portfolio  .box_images .image1 .overly p {
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(235, 84, 36, 0.5);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.section3_portfolio  .box_images .image1 .overly p span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1.5px solid #eb5424;
+}
+
+.section3_portfolio  .box_images .image1 .overly p:hover {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+/*
+    ======================================
+        Section 4 profile skills styles
+    ======================================
+*/
+
+.section4_profile_skills {
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.section4_content {
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    width: 50%;
+}
+
+.profile .profile_title {
+    font-size: 40px;
+    text-align: left;
+    margin: 30px 0;
+}
+
+.profile .profile_title  span {
+    font-weight: normal;
+    color: #888;
+}
+
+.profile .profile_list {
+    list-style: none;
+}
+
+.profile .profile_list li {
+    padding: 10.2px 0;
+    font-size: 15px;
+}
+
+.profile .profile_list li .p2 {
+    font-weight: normal;
+    color: #888;
+}
+
+.profile .profile_list li .p1 {
+    display: inline-block;
+    font-weight: bold;
+    width: 18%;
+}
+
+.profile .profile_list li a{
+    text-decoration: none;
+    color: #eb5424;
+}
+
+
+.skills {
+    width: 50%;
+}
+
+.skills .skills_title {
+    font-size: 40px;
+    text-align: left;
+    margin: 30px 0;
+}
+
+.skills .skills_title span {
+    font-weight: normal;
+    color: #888;
+}
+
+.skills .skills_desc {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+.skills .bar {
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+
+.skills .bar .bar_title {
+    float: left;
+}
+
+.skills .bar .bar_percents {
+    float: right;
+    margin-right: 13%;
+}
+
+.skills .bar .parent {
+    height: 3px;
+    background-color: #bbb8b8;
+    position: relative;
+    top: 7px;
+}
+
+.skills .bar .parent span{
+    background-color: #eb5424;
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 100%;
+    padding: 2px 0;
+}
+
+.skills .bar .parent span.sp1 {
+    width: 90%;
+}
+
+.skills .bar .parent span.sp2 {
+    display: block;
+    width: 80%;
+}
+
+.skills .bar .parent span.sp3 {
+    display: block;
+    width: 70%;
+}
+
+/*
+    ======================================
+        Section 5 Creative styles
+    ======================================
+*/
+
+.section5_creative {
+    /* height: 500px; */
+    background: url(../images/creative/about-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+}
+
+.section5_creative .creative_information {
+    padding-top: 50px;
+    width: 50%;
+    float: right;
+}
+
+.creative_title {
+    font-size: 25px;
+    font-weight: bold;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.creative_title span {
+    font-weight: normal;
+    color: #ebe7e7;
+}
+
+.creative_title2 {
+    font-size: 30px;
+    font-weight: bold;
+    word-spacing: 4px;
+    color: #eb5424;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.creative_title2 span {
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+.creative_desc , .creative_desc2{
+    font-size: 14.5px;
+    line-height: 1.9;
+    color: #ebe7e7;
+    text-align: justify;
+}
+
+/*
+    ======================================
+        Section 6 Social styles
+    ======================================
+*/
+
+.section6_social {
+    display: flex;
+}
+
+.social {
+    padding: 50px 0 40px 60px;
+}
+
+.face {
+    background-color: #4867aa;
+    width: 33.33%;
+}
+
+.twitter {
+    background-color: #2aa9e0;
+    width: 33.33%;
+}
+
+.pinterest {
+    background-color: #ce2f44;
+    width: 33.33%;
+}
+
+.social .icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+}
+
+.social .fa {
+    color: #888;
+}
+
+.social p {
+    margin-left: 70px;
+    color: #fff;
+}
+
+.social p .c1 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.social p .c2 {
+    font-size: 19px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 2.2;
+    opacity: 0.7;
+}
+
+/*
+    ======================================
+        Section 7 Drop styles
+    ======================================
+*/
+
+.section7_drop {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section7_drop .drop_title {
+    font-size: 40px;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+.section7_drop .drop_title span {
+    font-weight: normal;
+    color: #888;
+}
+
+.section7_drop form {
+    width: 70%;
+    margin: auto;
+}
+
+.section7_drop form input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.section7_drop form .form_input input {
+    width: 49%;
+
+}
+
+.section7_drop form .form_input input[type="text"] {
+    float: left;
+}
+
+.section7_drop form .form_input input[type="email"] {
+    float: right;
+}
+
+.section7_drop form input.sub {
+    width: 100%;
+}
+
+.section7_drop form textarea {
+    width: 100%;
+    padding: 5px;
+    background-color: #ebe9e9;
+}
+
+.section7_drop form input[type="submit"] {
+    width: 60%;
+    background-color: #fff;
+    border: 1px solid #888;
+    color: #888;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/*
+    ======================================
+        Foooter styles
+    ======================================
+*/
+
+.footer {
+    text-align: center;
+    padding: 13px 0;
+    border-top: 1px solid #888;
+}
+
+.footer p {
+    color: #888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+    ==================
+        Media Query
+    ==================
+*/
+
+/* Extra small devices (partrait phones , less than 576px) */
+/* @media (max-width:575px) {...} */
+
+/* Small devices (landscape phones, less than 768px) */
+/* @media (max-width:767px){...} */
+
+/* Medium devices (tables,  less than 992px) */
+/* @media (max-width:991px){...} */
+
+/* Large devices (desktops , less than 1200px) */
+/* @media (max-width: 1199) {...} */
+
+@media (max-width:575px){
+    /* section 2 work */
+    .parts {
+        display: block
+    }
+
+    .part1 {
+        width: 100%;
+    }
+
+    /* Section 3 Portfolio  */
+    .portfolio_list li a , .portfolio_list .active a {
+        padding: 10px 10px;
+    }
+
+    .section3_portfolio .box_images {
+        display: block;
+    }
+
+    .section3_portfolio .box_images .image1 {
+        width: 100%;
+    }
+
+    /* Section 4 profile skills */
+    .section4_content {
+        display: block;
+    }
+
+    .profile {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .skills {
+        width: 100%;
+    }
+
+    /*  Section 5 Creative styles */
+    .section5_creative .creative_information {
+        width: 100%;
+        float: none;
+    }
+
+    /* Section 6 Social styles */
+    .section6_social {
+        display: block;
+    }
+
+    .face {
+        width: 100%;
+    }
+
+    .twitter {
+        width: 100%;
+    }
+
+    .pinterest {
+        width: 100%;
+    }
+
+    /* Section 7 Drop  */
+    .section7_drop form .form_input input {
+        width: 100%;
+        float: none;
+    }
+
+    .section7_drop form {
+        width: 90%;
+    }
+
+
+
+
+}
+
+
+
+@media (min-width:576px) and (max-width:770px) {
+    /* section 2 */
+    .parts {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .part1 {
+        width: 45%;
+        margin-right: 5px;
+    }
+
+    /* Section 3 Portfolio  */
+    .section3_portfolio .box_images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section3_portfolio .box_images .image1 {
+        width: 50%;
+    }
+
+    /* Section 4 profile skills */
+    .section4_content {
+        display: block;
+    }
+
+    .profile {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    .skills {
+        width: 100%;
+    }
+
+     /*  Section 5 Creative styles */
+     .section5_creative .creative_information {
+        width: 100%;
+        float: none;
+    }
+
+    /* Section 6 Social styles */
+    .section6_social {
+        display: block;
+    }
+
+    .face {
+        width: 100%;
+    }
+
+    .twitter {
+        width: 100%;
+    }
+
+    .pinterest {
+        width: 100%;
+    }
+
+   
+
+}
+
+
+
+
+@media (min-width:771px) and (max-width:990px) {
+     /* Section 3 Portfolio  */
+     .section3_portfolio .box_images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section3_portfolio .box_images .image1 {
+        width: 33%;
+    }
+
+    .section3_portfolio  .box_images .image1 .overly p span {
+        padding: 10px 10px;
+    }
+
+    /* Section 6 Social styles */
+    .section6_social {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .face {
+        width: 42%;
+    }
+
+    .twitter {
+        width: 42%;
+    }
+
+    .pinterest {
+        width: 42%;
+    }
+
+
+
+
+}
+
+
+
+
+
+@media (max-width: 991px) {
+    /* Media for navbar style */
+    .navbar .logo {
+        width: 100%;
+        float: none;
+        
+    }
+
+    .navbar .ul_list {
+        width: 100%;
+        float: none;
+        margin-top: 20px;
+        display: none;
+    }
+
+    .navbar .ul_list .list_item  {
+        display: block;
+        text-align: center;
+    }
+
+    #nav input:checked {
+        transition: all 0.6s ease-in-out;
+    }
+
+    /* home information */
+    .home .home_information .home_title{
+        font-size: 35px;
+        margin-top: 100px;
+    }
+
+    .home .home_information .home_info {
+        font-size: 20px;
+    }
+
+    
+
+
+
+
+}
+
+
+@media (min-width: 992px) /* and (max-width: 1200px) */{
+    .nav .logo {
+        width: 40%;
+        float: left;
+    }
+
+    .nav .ul_list {
+        width: 60%;
+        float: left;
+        margin-right: -140px;
+    }
+
+    .navbar label {
+        display: none;
+    }
+
+} 
